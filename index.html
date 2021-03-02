@@ -12,13 +12,5 @@
     Новое слово: <div class="newWord" id="newWord"></div>
     <button id="generationWord">Нажми!</button>
 </body>
-<script src="script.js">
-    function sayWord () {
-    var oldWord = document.getElementById('word').value;
-    var newWord = oldWord.slice(1, 10);
-    document.getElementById('newWord').innerHTML = newWord;
-}
-
-document.getElementById('generationWord').addEventListener('click', sayWord);
-</script>
+<script src="script.js"></script>
 </html>
