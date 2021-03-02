@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slice</title>
+</head>
+<body>
+    Введи слово: <input class="word" id="word">
+    Новое слово: <div class="newWord" id="newWord"></div>
+    <button id="generationWord">Нажми!</button>
+</body>
+<script src="script.js">
+    function sayWord () {
+    var oldWord = document.getElementById('word').value;
+    var newWord = oldWord.slice(1, 10);
+    document.getElementById('newWord').innerHTML = newWord;
+}
+
+document.getElementById('generationWord').addEventListener('click', sayWord);
+</script>
+</html>
